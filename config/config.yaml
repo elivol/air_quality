@@ -1,0 +1,7 @@
+db:
+  postgresql:
+    host: database
+    port: 5432
+    db_name: elvolv
+    username: {{ 'postgres' | env_override("POSTGRES_USER") }}
+    password: {{ 'postgres' | env_override('POSTGRES_PASSWORD') }}
